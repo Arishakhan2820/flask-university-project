@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PowerFit Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="logo">PowerFit Gym</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/membership">Membership</a>
+    </div>
+</nav>
+
+<!-- ===== HERO / COVER SECTION ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome, {{ username }}</h1>
+        <p>Train Hard. Stay Fit. Live Strong.</p>
+        <a href="/membership" class="btn">Join Now</a>
+    </div>
+</section>
+
+<!-- ===== HIGHLIGHTS ===== -->
+<section class="container">
+    <h2>Why Choose Our Gym?</h2>
+
+    <div class="features">
+        {% for item in highlights %}
+        <div class="feature-card">
+            <p>{{ item }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+</body>
+</html>

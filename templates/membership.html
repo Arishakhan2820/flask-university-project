@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membership Plans</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">PowerFit Gym</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/membership">Membership</a>
+    </div>
+</nav>
+
+<section class="container">
+    <h1>Membership Plans</h1>
+
+    <div class="plans">
+        {% for plan in plans %}
+        <div class="plan-card">
+            <h2>{{ plan.name }}</h2>
+            <p>{{ plan.price }}</p>
+            <button>Get Started</button>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+</body>
+</html>

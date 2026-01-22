@@ -1,0 +1,152 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #0b1c2d;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff9800;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("/static/images/gym-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #ff9800;
+    padding: 12px 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+/* ===== Container ===== */
+.container {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.center-text {
+    max-width: 700px;
+    margin: auto;
+    font-size: 17px;
+    color: #555;
+}
+
+/* ===== Features ===== */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+/* ===== Membership Plans ===== */
+.plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background: white;
+    width: 260px;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.plan-card h2 {
+    color: #0b1c2d;
+}
+
+.plan-card p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.plan-card button {
+    background-color: #0b1c2d;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.plan-card button:hover {
+    background-color: #ff9800;
+    color: black;
+}
